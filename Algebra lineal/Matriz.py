@@ -1,6 +1,3 @@
-# Script: crear_arreglos_sin_numpy.py
-# Versión sin NumPy: usa listas de Python nativas y validación básica de entradas.
-
 def input_int(prompt, min_val=None):
     while True:
         s = input(prompt).strip()
@@ -97,7 +94,7 @@ def obtener_forma_3d(capas):
 # ------------------ MENÚ PRINCIPAL ------------------
 def main():
     while True:
-        print("\n--- CREACIÓN DE ARREGLOS (SIN NUMPY) ---")
+        print("\n--- CREACIÓN DE ARREGLOS---")
         print("1. Crear arreglo 1D")
         print("2. Crear arreglo 2D")
         print("3. Crear arreglo 3D")
@@ -131,3 +128,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
