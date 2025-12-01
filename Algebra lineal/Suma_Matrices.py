@@ -1,4 +1,4 @@
-# Programa para sumar dos matrices
+# Programa para sumar dos matrices con expresiones algebraicas
 
 # Pedir dimensiones
 filas = int(input("Ingrese el número de filas: "))
@@ -13,7 +13,7 @@ print("\nIngrese los elementos de la matriz A:")
 for i in range(filas):
     fila = []
     for j in range(columnas):
-        valor = int(input(f"A[{i}][{j}]: "))
+        valor = input(f"A[{i}][{j}]: ")  # ahora es string
         fila.append(valor)
     A.append(fila)
 
@@ -21,15 +21,21 @@ print("\nIngrese los elementos de la matriz B:")
 for i in range(filas):
     fila = []
     for j in range(columnas):
-        valor = int(input(f"B[{i}][{j}]: "))
+        valor = input(f"B[{i}][{j}]: ")  # ahora es string
         fila.append(valor)
     B.append(fila)
 
-# Sumar matrices
+# Sumar matrices algebraicas
 for i in range(filas):
     fila = []
     for j in range(columnas):
-        fila.append(A[i][j] + B[i][j])
+        # Concatenar con " + " si ambos valores no están vacíos
+        if A[i][j] and B[i][j]:
+            fila.append(f"{A[i][j]} + {B[i][j]}")
+        elif A[i][j]:
+            fila.append(A[i][j])
+        else:
+            fila.append(B[i][j])
     C.append(fila)
 
 # Mostrar resultado

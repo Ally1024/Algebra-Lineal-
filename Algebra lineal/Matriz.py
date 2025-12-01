@@ -1,3 +1,5 @@
+# Matriz.py
+# Implementación de arreglos 1D, 2D y 3D 
 def input_int(prompt, min_val=None):
     while True:
         s = input(prompt).strip()
@@ -94,7 +96,7 @@ def obtener_forma_3d(capas):
 # ------------------ MENÚ PRINCIPAL ------------------
 def main():
     while True:
-        print("\n--- CREACIÓN DE ARREGLOS---")
+        print("\n--- CREACIÓN DE ARREGLOs--")
         print("1. Crear arreglo 1D")
         print("2. Crear arreglo 2D")
         print("3. Crear arreglo 3D")
@@ -128,4 +130,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
